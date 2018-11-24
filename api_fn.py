@@ -22,7 +22,7 @@ def get_stations():
 def get_transports(time_str):
     url = main_url + 'transports'
     timer = {'time':time_str}
-    return get_json1(url, payload = timer)
+    return get_json1(url, payload = timer)['transports']
 
 if __name__ == "__main__":
 
